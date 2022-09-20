@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\libs\materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--link dos icones abaixo-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Gamer Time</title>
+  
+</head>
+<body>
+    <div class="container">
+    <h1 class="center">Gamer Time</h1>
+    <p class="frase center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, consequatur amet veniam vitae temporibus similique maxime voluptatum cumque error, dignissimos commodi molestiae ex sit in quaerat. Dolorum possimus error architecto!</p>
+    <div class="center">
+        <img src="/img/spinner.gif"  alt="Spnner" id="spinner">
+        <p id="erro">
+            Ocorreu um erro, por favor tente novamente.
+        </p>
+    </div>
+    <ul class="informacoes center">
+        <li> <i class="Tyni material-icons icones">assignment</i>
+            <span id="tamanhoDaFrase">5</span> 
+            palavras
+        </li>
+        <li>
+            <li> <i class="Tyni material-icons icones">query_builder</i>
+            <span id="contador-Tempo">10</span>
+             segundos
+            </li>
+    </ul>
+
+    <textarea name=""class="campo-Digitacao" id="" cols="30" rows="10"></textarea>
+    <div class="buttons">
+    <a id="button-Restart" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">refresh</i></a>
+    <a id="button-Score" class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">assignment</i></a>
+    <a id="button-Frase" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">shuffle</i></a>
+</div>
+    <ul class="center">
+        <li>
+            <span id="contador-Caracteres">0</span> caracteres
+         </li>
+        <li><span id="contador-Palavras">0</span> Palavras</li>
+    </ul>
+    <section class="placar">
+        <h3 class="center">Placar</h3>
+        <table class="centered bordered">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>No. de palavras</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody>                
+            </tbody>
+        </table>
+    </section>
+</div>
+    <footer>
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        <script src="js/placar.js"></script>
+        <script src="js/frase.js"></script>
+    </footer>
+</body>
+</html>
